@@ -2,7 +2,7 @@
 // "https://deno.land/std@0.194.0/path/mod.ts";
 // We can use the node:path module, which is usable in Deno/Deno Deploy
 import { join } from "node:path";
-import defaultResources from "./default_resources.js";
+//import defaultResources from "./default_resources.js";
 
 // Init Deno KV database path
 let kvPath;
@@ -47,6 +47,6 @@ export async function deleteResource(title: string) {
 }
 
 // Bootstrap the database with the default resources
-defaultResources.forEach((resource) => {
-  addResource(resource);
-});
+//defaultResources.forEach((resource) => {
+//  addResource(resource);
+//});
