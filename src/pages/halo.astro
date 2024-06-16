@@ -1,15 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const title = "halo";
 ---
 
-<Layout title="Welcome to Deno 🦕">
+<Layout title={title}>
   <main>
-    <h1>Welcome to <span class="text-gradient">Deno 🦕</span></h1>
-    <div class="news-form">
-      <p>
-      Welcome to Deno! 
-      </p>
-    </div>
+        <p>hai from {title}</p>
   </main>
 </Layout>
 
