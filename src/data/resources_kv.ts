@@ -4,6 +4,8 @@
 import { join } from "node:path";
 //import defaultResources from "./default_resources.js";
 
+
+
 // Init Deno KV database path
 let kvPath;
 if (!Deno.env.get("DENO_DEPLOYMENT_ID")) {
@@ -24,6 +26,7 @@ if (!Deno.env.get("DENO_DEPLOYMENT_ID")) {
 }
 
 const db = await Deno.openKv(kvPath);
+//const db = await Deno.openKv("https://api.deno.com/databases/f4a9f5ab-07e1-45fc-bc50-22c366d0d1e7/connect");
 
 export interface Resource {
   url: string;

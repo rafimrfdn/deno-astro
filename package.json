@@ -3,8 +3,8 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "dev": "deno run -A --unstable npm:astro dev",
-    "start": "deno run -A --unstable npm:astro dev",
+    "dev": "deno run -A npm:astro dev",
+    "start": "deno run -A npm:astro dev",
     "build": "astro check && astro build",
     "preview": "deno run -A --unstable ./dist/server/entry.mjs",
     "astro": "astro",
