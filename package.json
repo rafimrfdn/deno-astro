@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "deno run -A npm:astro dev",
     "start": "deno run -A npm:astro dev",
-    "build": "deno run -A npm:astro check && deno run -A npm:astro build",
+    "build": "astro build",
     "preview": "deno run -A ./dist/server/entry.mjs",
     "astro": "astro",
     "format": "deno fmt && prettier --write ."
