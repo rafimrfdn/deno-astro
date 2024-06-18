@@ -1,0 +1,87 @@
+/** sans serif**/
+@import '@fontsource/poppins/300.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/raleway';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
+@import '@fontsource-variable/orbitron';
+
+/**serif**/
+@import '@fontsource/gloock';
+@import '@fontsource-variable/cinzel';
+@import '@fontsource/italiana';
+@import '@fontsource-variable/ballet';
+@import '@fontsource/windsong';
+@import '@fontsource/ephesis';
+
+@font-face {
+    font-family: 'RainbowBeautyDemo';
+    src: url('../static/fonts/rainbowbeautydemo.otf') format('woff');
+}
+@font-face {
+    font-family: 'AmarylisParadise';
+    src: url('../static/fonts/Amarylis-Paradise-BF6452bc39a476f.otf') format('woff');
+}
+@font-face {
+    font-family: 'Hemilia';
+    src: url('../static/fonts/Hemilia.otf') format('woff');
+}
+@font-face {
+    font-family: 'Inezz';
+    src: url('../static/fonts/Inezz.otf') format('woff');
+}
+@font-face {
+    font-family: 'Sloopscript';
+    src: url('../static/fonts/sloopscript.ttf') format('woff');
+}
+@font-face {
+    font-family: 'Lusican';
+    src: url('../static/fonts/Lusican.otf') format('woff');
+}
+@font-face {
+    font-family: 'Hosera';
+    src: url('../static/fonts/Hosera-Regular.otf') format('woff');
+}
+
+
+/* Configure this in Tailwind.config.js */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30%) scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.animate-fadeOut { 
+    animation: fadeOut 1s ease-in-out;
+}
+
+.gradient-hitam-elegan {
+   background: radial-gradient(at 100% 100%, #3f3f46, rgb(28, 25, 23), rgb(0, 0, 0))
+}
+
+/* .gradient-putih-elegan {  */
+/*    background: radial-gradient(at 100% 100%, #7a2b33, #7a2b33, rgb(0, 0, 0)) */
+/* } */
+

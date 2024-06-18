@@ -1,0 +1,47 @@
+---
+export interface Props {
+  fotoBgMahasuci: string;
+  separator1: string;
+  separator2: string;
+  separator3: string;
+  separator4: string;
+}
+
+const {
+  fotoBgMahasuci,
+  separator1, 
+  separator2, 
+  separator3, 
+  separator4 
+} = Astro.props;
+---
+
+<section class="section section-mahasuci" >
+      <div class="text-container text-container-top">
+        <p class="font-hw text text__title"> Qs. Ar-Rum:21 </p>
+        <p class="text text__paragraph">
+            Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+            pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
+            dan merasa tenteram kepadanya, dan Dia menjadikan diantaramu rasa
+            kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
+            terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+        </p>
+      </div>
+
+
+</section>
+
+<style>
+.section-mahasuci{
+}
+.text__title{
+    font-size:3em;
+    margin-bottom:2em;
+}
+.text__paragraph{
+    font-size:1em;
+}
+</style>
+
+<!-- <img src={separator3} class="md:w-1/6 w-2/3 mx-auto mb-36 js-show-on-scroll" />-->
+

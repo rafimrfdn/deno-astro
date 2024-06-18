@@ -1,0 +1,48 @@
+---
+export interface Props {
+  fotoBgUcapan: string;
+  separator1: string;
+  separator2: string;
+  separator3: string;
+  separator4: string;
+}
+
+const {
+  fotoBgUcapan,
+  separator1, 
+  separator2, 
+  separator3, 
+  separator4 
+} = Astro.props;
+---
+
+<section
+  class="relative md:h-full flex flex-col items-center justify-around text-center snap-center bg-cover bg-center"
+>
+
+<!--  <img src={separator3} class="md:w-1/6 w-2/3 mx-auto mt-36 js-show-on-scroll" />-->
+
+    <div class="backdrop-blur-sm bg-slate/30 w-full z-40  ">
+
+        <div class="flex justify-between items-center flex-wrap z-30">
+
+            <div class=" md:w-1/2 w-full mb-12">
+                <img 
+                    src={fotoBgUcapan}
+                    class="bg-center object-cover object-top  md:h-screen h-auto w-full rounded shadow-2xl  js-show-on-scroll  "
+                />
+            </div>
+
+            <div class=" md:w-1/2 w-full">
+                <h4 class="text-2xl mb-6 font-serif">
+                    Terima kasih atas doa dan ucapannya
+                </h4>
+                <div id="komentar" class="z-10 text-white rounded-lg border border-white p-10 md:p-24 overflow-y-scroll h-96  mx-6 js-show-on-scroll"></div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<style></style>

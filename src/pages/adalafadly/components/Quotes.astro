@@ -1,0 +1,49 @@
+---
+export interface Props {
+  fotoQuotesCowo: string;
+  fotoQuotesCewe: string;
+  quotesCowo: string;
+  quotesCewe: string;
+  separator1: string;
+  separator2: string;
+  separator3: string;
+  separator4: string;
+}
+
+const {
+  fotoQuotesCowo,
+  fotoQuotesCewe,
+  quotesCowo,
+  quotesCewe,
+  separator1, 
+  separator2, 
+  separator3, 
+  separator4 
+} = Astro.props;
+---
+
+<section
+  class="relative w:h-full flex flex-col justify-center items-center text-start bg-cover bg-center snap-start "
+>
+
+    <p class="text-2xl font-serif text-start ml-7 mt-40 mb-3">Love Quotes</p>
+
+    <div class="flex flex-wrap justify-between z-30 md:w-1/2 w-3/4 ">
+    <div class="lg:w-1/2 w-full flex flex-col flex-wrap js-show-on-scroll p-6 ">
+        <img 
+            class="h-auto rounded shadow-2xl bg-center object-cover z-20 mb-4" 
+            src={fotoQuotesCewe}></img>
+        <p class=" mb-4 md:text-2xl flex items-center text-center m-4 js-show-on-scroll ">{quotesCewe}</p>
+    </div>
+
+    <div class="lg:w-1/2 w-full flex flex-col flex-wrap js-show-on-scroll p-6 ">
+        <img 
+            class="h-auto rounded shadow-2xl bg-center object-cover z-20 mb-4" 
+            src={fotoQuotesCowo}></img>
+        <p class="mb-4 md:text-2xl flex items-center text-center m-4 js-show-on-scroll ">{quotesCowo}</p>
+    </div>
+    </div>
+
+</section>
+
+<style></style>

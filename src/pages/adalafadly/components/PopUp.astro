@@ -1,0 +1,60 @@
+---
+export interface Props {
+  namaCewe: string;
+  namaCowo: string;
+  fotoBgPopup: string;
+    separator1: string;
+    separator2: string;
+    separator3: string;
+    separator4: string;
+}
+
+const { namaCewe, namaCowo, fotoBgPopup, separator1, separator2, separator3, separator4 } = Astro.props;
+---
+
+<div class="popup z-50 absolute h-screen w-full ">
+  <section
+    class="bg-black text-white fixed w-full h-full flex bg-fixed flex-col justify-around text-center snap-center"
+  >
+    <img
+      src={fotoBgPopup}
+      class="bg-center object-cover h-full w-full absolute opacity-50 "
+    />
+
+      <!--<img
+        src="https://images.unsplash.com/photo-1542491873-564432bfb050?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+        class="bg-center object-cover w-full h-full absolute opacity-10"
+      />-->
+
+    <div class="z-30 flex ">
+    <!--<div class="w-2/12 bg-black/50 h-screen flex flex-col justify-center  ">
+                <p class="-rotate-90 font-serif text-4xl text-white whitespace-nowrap ">Save The Date</p>
+            </div>-->
+     <div class="w-full h-screen flex flex-col justify-center">
+      <p class="text-small mb-3">Undangan Pernikahan</p>
+      <p class="font-hw text-7xl my-4 js-show-on-scroll">{namaCowo} & {namaCewe}</p>
+
+      <div class="w-full  ">
+        <p class="mb-3 js-show-on-scroll">Kepada Yth:</p>
+        <p class="text-bold text-2xl mb-3 js-show-on-scroll">
+          <script is:inline>
+            const queryString = document.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const namaTamu = urlParams.get("to");
+
+            if (namaTamu !== null) { 
+                document.write(namaTamu);
+            }
+          </script>
+        </p>
+        <button
+          id="togglefs"
+          class="bukaundangan border-b text-white roundehidden p-3 animate-pulse"
+          onclick="SoundPlay()"
+          >Buka Undangan</button
+        >
+      </div>
+    </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,96 @@
+---
+export interface Props {
+  fotoCewe: string;
+  namaCewe: string;
+  namaLengkapCewe: string;
+  ceweAdalah: string;
+  namaAyahCewe: string;
+  namaIbuCewe: string;
+    fotoBg3: string;
+    fotoBg4: string;
+    fotoBg5: string;
+    fotoBg6: string;
+}
+
+const {
+  fotoCewe,
+  namaCewe,
+  namaLengkapCewe,
+  ceweAdalah,
+  namaAyahCewe,
+  namaIbuCewe,
+  fotoBg3,
+  fotoBg4,
+  fotoBg5,
+  fotoBg6,
+} = Astro.props;
+---
+
+<section class="section section__cewe" >
+    <div class="slider js-show-on-scroll slide-photo-container-right">
+        <img src={fotoCewe} class="slide slide-photo-right" />
+        <img src={fotoBg6}  class="slide slide-photo-right" />
+        <img src={fotoBg3}  class="slide slide-photo-right" />
+        <img src={fotoBg5}  class="slide slide-photo-right" />
+        <img src={fotoBg4}  class="slide slide-photo-right" />
+    </div>
+    <div class="js-show-on-scroll text-container" >
+        <p class="font-hw text__title">{namaLengkapCewe}</p>
+        <div class="text__paragraph">
+            <a href="https://www.instagram.com/a.dalaas" class="text">@a.dalaas</a>
+        </div>
+        <p class="text">{ceweAdalah} dari :</p>
+        <p class="text--medium">
+            <strong>{namaAyahCewe}</strong> dan <strong>{namaIbuCewe}</strong>
+        </p>
+    </div>
+</section>
+
+<style is:inline>
+.slider .slide {
+    top:0;
+    bottom:0;
+    animation: slider 12.5s infinite;
+}
+ 
+.slider .slide:nth-child(1) {
+   animation-delay: 0s;
+    
+}
+
+.slider .slide:nth-child(2) {
+   animation-delay: -2.5s;
+}
+
+.slider .slide:nth-child(3) {
+   animation-delay: -5s;
+}
+
+.slider .slide:nth-child(4) {
+   animation-delay: -7.5s;
+}
+
+.slider .slide:nth-child(5) {
+   animation-delay: -10s;
+}
+
+@keyframes slider {
+  0%, 16%, 100% {
+    opacity: 1;
+    animation-timing-function: ease;
+    z-index: 0;
+  }
+  20% {
+    opacity: 0;
+    animation-timing-function: step-end;
+    z-index: 0;
+  }
+  96% {
+    opacity: 1;
+    animation-timing-function: step-end;
+    z-index: -1;
+  }
+}
+
+
+</style>

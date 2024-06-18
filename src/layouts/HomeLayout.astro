@@ -1,0 +1,56 @@
+---
+import "../styles/style.css";
+
+import favicon16 from "../static/favicon/favicon-16x16.png";
+import favicon32 from "../static/favicon/favicon-32x32.png";
+import faviconapple from "../static/favicon/apple-touch-icon.png";
+import manifest from "../static/favicon/site.webmanifest";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<!--===========================================================================
+========================== Haiiii !!! Mau ngintip yah =========================
+===============================================================================
+SITUS INI DIBUAT DENGAN SEPENUH HATI OLEH MUH. RAFIUDDIN ASAL MAKASSAR.
+TOLONG JANGAN ZALIMI SITUS INI. INGAT DUNIA SEMENTARA, AKHIRAT SELAMANYA.
+JIKA INGIN KOLABORASI EMAIL KE mail@mrfdn.com.
+===============================================================================
+===============================================================================
+============================================================================-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Miliki halaman web undangan digital yang elegan untuk setiap event spesia Anda.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href={faviconapple}>
+    <link rel="icon" type="image/png" sizes="32x32" href={favicon32}>
+    <link rel="icon" type="image/png" sizes="16x16" href={favicon16}>
+    <link rel="manifest" href={manifest}>
+    <!--    <meta name="generator" content={Astro.generator} /> -->
+    <title>{title}</title>
+    <script
+      is:inline
+      src="https://cdn.rawgit.com/Keyang/node-csvtojson/d41f44aa/browser/csvtojson.min.js"
+    ></script>
+
+    <style is:global>
+      * {
+        font-family: "Inter Variable", sans-serif;
+      }
+
+      .font-serif {
+        font-family: "Cinzel Variable", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+    <!--<Header/>-->
+  </body>
+</html>

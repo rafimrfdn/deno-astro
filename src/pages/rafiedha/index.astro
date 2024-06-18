@@ -1,0 +1,465 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import PlayPauseButton  from "./components/PlayPauseButton.astro";
+
+import PopUp 		    from "./components/PopUp.astro";
+import WeddingOf 	    from "./components/WeddingOf.astro";
+import Countdown 	    from "./components/Countdown.astro";
+import MahaSuci 	    from "./components/MahaSuci.astro";
+import Cewe 		    from "./components/Cewe.astro";
+import Cowo 		    from "./components/Cowo.astro";
+import LoveStory        from "./components/LoveStory.astro";
+import Quotes           from "./components/Quotes.astro";
+import Event 		    from "./components/Event.astro";
+import Rsvp 		    from "./components/Rsvp.astro";
+import Ucapan 		    from "./components/Ucapan.astro";
+import Gallery          from "./components/Gallery.astro";
+//import GallerySlide 	from "./components/GallerySlide.astro";
+//import Gallery          from "./components/Gallery.svelte";
+//import GalleryModal          from "./components/GalleryModal.svelte";
+import End 		        from "./components/End.astro";
+
+
+import fotoCewe from  "./img/cewe.webp";
+import fotoCowo from  "./img/cowo.webp";
+import fotoBg   from  "./img/foto-1.webp";
+import fotoBg2  from  "./img/foto-2.webp";
+import fotoBg3  from  "./img/foto-3.webp";
+import fotoBg4  from  "./img/foto-4.webp";
+import fotoBg5  from  "./img/foto-5.webp";
+import fotoBg6  from  "./img/foto-6.webp";
+
+import fotoBgLayout from    "./img/foto-1.webp";
+
+import fotoOgImage     from "./img/og-image.jpg";
+
+import fotoBgEnd       from "./img/foto-1.webp";
+import fotoBgRsvp      from "./img/foto-2.webp";
+import fotoBgEvent     from "./img/foto-2.webp";
+import fotoBgMahasuci  from "./img/foto-4.webp";
+import fotoBgWeddingof from "./img/foto-2.webp";
+import fotoBgPopup     from "./img/foto-4.webp";
+import fotoBgUcapan    from "./img/foto-4.webp";
+import fotoBgLoveStory from "./img/foto-1.webp";
+
+import fotoQuotesCowo  from "./img/cowo.webp";
+import fotoQuotesCewe  from "./img/cewe.webp";
+
+import separator1 from "../../static/uploads/separator1.png";
+import separator2 from "../../static/uploads/separator2.png";
+import separator3 from "../../static/uploads/separator3.png";
+import separator4 from "../../static/uploads/separator4.png";
+
+const title = "Fadly & A. Dala";
+const ogWeddingOf = "The Wedding of Fadly & A. Dala";
+const singkatanPasangan = "F & A.D";
+
+const namaCowo = "Fadly";
+const namaLengkapCowo = "M. Fadly Muis";
+const cowoAdalah = "Anak pertama";
+const namaAyahCowo = "H. Abdul Muis Rahim";
+const namaIbuCowo = "Hj. Hasnawati";
+
+const namaCewe = "A. Dala";
+const namaLengkapCewe = "A. Dala Uleng Ady Syam";
+const ceweAdalah = "Anak kelima";
+const namaAyahCewe = "Andi Ady Syam";
+const namaIbuCewe = "Almh. Andi Erty Herawaty";
+
+const hariAkad = "Sabtu";
+const hariResepsi = "Sabtu";
+const tanggalAkad = "20 Januari 2024";
+const tanggalResepsi = "20 Januari 2024";
+const jamAkad = "10.00 WITA";
+const jamResepsi = "12.00 - 15.00 WITA";
+const tempatAkad = "Hotel Swiss-Belinn, Makassar";
+const tempatResepsi = "Hotel Swiss-Belinn, Makassar";
+const mapAkad = "https://maps.app.goo.gl/CqdpedhT1Emza9E27";
+const mapResepsi = "https://maps.app.goo.gl/CqdpedhT1Emza9E27";
+
+const quotesCowo = "Men learn to love the woman they are attracted to. Women learn to become attracted to the man they fall in love with.";
+const quotesCewe = "Women leave their marriages when they can't take any more. Men leave when they find someone new.";
+
+const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/07/y2mate.com-Ada-Untukmu-Tyok-Satrio-Official-Music-Video-m-1.29.mp3";
+---
+
+<Layout 
+    title={title} 
+    fotoOgImage={fotoOgImage}
+    ogWeddingOf={ogWeddingOf}
+>
+
+
+  <PlayPauseButton/>
+
+  <PopUp namaCewe={namaCewe} namaCowo={namaCowo} fotoBgPopup={fotoBgPopup}  separator1={separator1} separator2={separator2} separator3={separator3} />
+  <div class="font-sans wrapper gradient-hitam-elegan ">
+
+    <WeddingOf
+      title={title}
+      fotoBgWeddingof={fotoBgWeddingof}
+      hariResepsi={hariResepsi}
+      tanggalResepsi={tanggalResepsi}
+      fotoBg2={fotoBg2}
+      fotoBg3={fotoBg3}
+      fotoBg4={fotoBg4}
+      fotoBg5={fotoBg5}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+   />
+
+
+<!--      <Countdown
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+        />-->
+
+      <MahaSuci fotoBgMahasuci={fotoBgMahasuci}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+        />
+        <!--    <Cowo
+      fotoCowo={fotoCowo}
+      namaCowo={namaCowo}
+      namaLengkapCowo={namaLengkapCowo}
+      cowoAdalah={cowoAdalah}
+      namaAyahCowo={namaAyahCowo}
+      namaIbuCowo={namaIbuCowo}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+      fotoBg3={fotoBg3}
+      fotoBg4={fotoBg4}
+      fotoBg5={fotoBg5}
+      fotoBg6={fotoBg6}
+    />
+    <Cewe
+      fotoCewe={fotoCewe}
+      namaCewe={namaCewe}
+      namaLengkapCewe={namaLengkapCewe}
+      ceweAdalah={ceweAdalah}
+      namaAyahCewe={namaAyahCewe}
+      namaIbuCewe={namaIbuCewe}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+      fotoBg3={fotoBg3}
+      fotoBg4={fotoBg4}
+      fotoBg5={fotoBg5}
+      fotoBg6={fotoBg6}
+    />
+    <!-- <LoveStory -->
+    <!--   fotoBgLoveStory={fotoBgLoveStory} -->
+    <!--   separator1={separator1} -->
+    <!--   separator2={separator2} -->
+    <!--   separator3={separator3} -->
+    <!--   separator4={separator4} -->
+    <!--     /> -->
+        <!--    <Event
+      hariAkad={hariAkad}
+      hariResepsi={hariResepsi}
+      tanggalAkad={tanggalAkad}
+      tanggalResepsi={tanggalResepsi}
+      jamAkad={jamAkad}
+      jamResepsi={jamResepsi}
+      tempatAkad={tempatAkad}
+      tempatResepsi={tempatResepsi}
+      mapAkad={mapAkad}
+      mapResepsi={mapResepsi}
+      fotoBgEvent={fotoBgEvent}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+    />
+    <Rsvp fotoBgRsvp={fotoBgRsvp}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+        />
+    <Ucapan fotoBgUcapan={fotoBgUcapan}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+        />
+
+    <Gallery client:load
+
+      fotoCowo  = {fotoCowo}
+      fotoCewe  = {fotoCewe}
+      fotoBg   = {fotoBg   }
+      fotoBg2  = {fotoBg2  }
+      fotoBg3  = {fotoBg3  }
+      fotoBg4  = {fotoBg4  }
+      fotoBg5  = {fotoBg5  }
+      fotoBg6  = {fotoBg6  }
+            
+
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+    />
+
+    <End fotoBgEnd={fotoBgEnd} singkatanPasangan={singkatanPasangan}
+      separator1={separator1}
+      separator2={separator2}
+      separator3={separator3}
+      separator4={separator4}
+/> -->
+  </div>
+
+  <!-- end gallery till end without snap scroll -->
+
+  <audio
+    id="audio"
+    src={backgroundMusic}
+    loop
+    autoplay></audio>
+
+<!--  <style is:inline>
+
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.crossfade > figure:nth-child(1) {
+  background-image: url('https://myspecialday.netlify.app/_astro/adat-08.3a4c6a80.jpg');
+}
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 2s;
+  background-image: url('https://myspecialday.netlify.app/_astro/adat-01.d5b94287.webp');
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 4s;
+  background-image: url('https://unsplash.it/1925/950?image=1002');
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 6s;
+  background-image: url('https://unsplash.it/1925/950?image=1001');
+}
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 8s;
+  background-image: url('https://unsplash.it/1925/950?image=1000');
+}
+ @keyframes
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+
+
+    </style>-->
+
+  <script is:inline>
+    "use strict";
+
+    const popup = document.querySelector(".popup");
+    const bukaundangan = document.querySelector(".bukaundangan");
+
+    window.onload = function () {
+      popup.style.display = "flex";
+    };
+
+    bukaundangan.addEventListener("click", () => {
+//  popup.style.transform= "translateY(-100%)";
+    popup.classList.add('popup-hide');
+      myPage.requestFullscreen();
+    });
+
+    let myPage = document.documentElement;
+    let togglefs = document.getElementById("togglefs");
+
+    togglefs.addEventListener("click", () => {
+      myPage.requestFullscreen();
+    });
+
+    // form input komentar atau ucapan
+    function konfirmasihadir() {
+      var hadir = document.getElementById("hadir");
+      var hadirberapa = document.getElementById("hadirberapa");
+      hadirberapa.style.display = hadir.checked ? "block" : "none";
+    }
+
+    const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyljyQ1QJgNg7bkF0ZUCt4JNPHsOB2v2dQCJdqd0tsRVmJnYHoibjTYxKk_pf-6LRCC/exec";
+    const form = document.forms["submit-form"];
+    const btnKirim = document.querySelector(".btn-kirim");
+    const btnLoading = document.querySelector(".btn-loading");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      btnLoading.classList.toggle("hidden");
+      btnKirim.classList.toggle("hidden");
+
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          btnLoading.classList.toggle("hidden");
+          btnKirim.classList.toggle("hidden");
+          form.reset();
+          console.log("Success!", response);
+          // Refresh the comments after successful submission
+          fetchAndDisplayComments();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+
+    // tampilkan komentar
+    function fetchAndDisplayComments() {
+      const url =
+        "https://docs.google.com/spreadsheets/d/1WTOfAFPitlq3wv_lfGQS_PVev4MpHZn0x4xXs4nHxu0/export?format=csv";
+      const main = document.querySelector("#komentar");
+      main.innerHTML = "<p>Loading...</p>";
+
+      fetch(url)
+        .then((result) => result.text())
+        .then(function (csvtext) {
+          return csv().fromString(csvtext);
+        })
+        .then(function (csv) {
+          main.innerHTML = ''; // Clear previous comments
+          csv.forEach(function (row) {
+            main.innerHTML +=
+            "<div class='py-3'>" +
+              "<h4 class='font-bold text-xl'>" +
+              row.nama +
+              "</h4>" +
+              "<p class='font-sans'>" +
+              row.pesan +
+              "</p>" +
+              "<hr class='my-3 border-t border-white mx-auto w-1/12'/>" +
+              "</div>";
+          });
+        });
+    }
+    fetchAndDisplayComments();
+
+
+
+    //gallery
+    function Close() {
+      $(".royalSlider").royalSlider("goTo", 1);
+      document.getElementById("close").style.display = "none";
+      var sound = document.getElementById("audio");
+      sound.play();
+    }
+
+    //audio
+    function SoundStop() {
+      document.getElementById("btn_play").style.display = "none";
+      document.getElementById("btn_stop").style.display = "block";
+      var sound = document.getElementById("audio");
+      sound.pause();
+    }
+    function SoundPlay() {
+      document.getElementById("btn_play").style.display = "block";
+      document.getElementById("btn_stop").style.display = "none";
+      var sound = document.getElementById("audio");
+      sound.play();
+    }
+
+    document.addEventListener("visibilitychange", event => {
+      if (document.visibilityState === "visible") {
+        document.getElementById('audio').play();
+        console.log("tab is active")
+      } else {
+        const audio = document.getElementById('audio');
+        audio && audio.pause();
+        console.log("tab is inactive")
+      }
+    })
+
+    //video
+    var vid = document.getElementById("myVideo");
+    vid.onplay = function () {
+      document.getElementById("btn_play").style.display = "none";
+      document.getElementById("btn_stop").style.display = "block";
+      var sound = document.getElementById("audio");
+      sound.pause();
+    };
+    vid.onpause = function () {
+      document.getElementById("btn_play").style.display = "block";
+      document.getElementById("btn_stop").style.display = "none";
+      var sound = document.getElementById("audio");
+      sound.play();
+    };
+
+    </script>
+
+    <script is:inline>
+    // animation
+    const callback = function (entries) {
+        entries.forEach((entry) => {
+            console.log(entry);
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fadeIn");
+            } else {
+             //   entry.target.classList.remove("animate-fadeIn");
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback);
+
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+    targets.forEach(function (target) {
+        target.classList.add("opacity-0");
+        observer.observe(target);
+    });
+
+
+    </script>
+
+
+</Layout>
+
+<style>
+.wrapper{
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: scroll;
+    color: #efefef;
+}
+</style>

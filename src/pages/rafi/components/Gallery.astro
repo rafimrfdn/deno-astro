@@ -1,0 +1,108 @@
+---
+export interface Props {
+  fotoCewe: string;
+  fotoCowo: string;
+  fotoBg: string;
+  fotoBg2: string;
+  fotoBg3: string;
+  fotoBg4: string;
+  fotoBg5: string;
+  fotoBg6: string;
+}
+
+const {
+  fotoCewe,
+  fotoCowo,
+  fotoBg,
+  fotoBg2,
+  fotoBg3,
+  fotoBg4,
+  fotoBg5,
+  fotoBg6,
+} = Astro.props;
+---
+
+<section
+  class="relative flex items-center justify-around text-center bg-cover bg-center py-60 snap-start"
+>
+  
+  <div class="h-full bg-center object-cover w-full absolute z-20"></div>
+
+  <div class="container px-5 py-4 mx-auto lg:pt-12 lg:px-32 z-40 ">
+    <div class="flex flex-wrap -m-1 md:-m-2">
+      <div class="flex flex-wrap ">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-min rounded-lg"
+            src={fotoBg}
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 js-show-on-scroll">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-max rounded-lg"
+            src={fotoBg2}
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 js-show-on-scroll">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-max rounded-lg"
+            src={fotoBg3}
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 js-show-on-scroll">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-max rounded-lg"
+            src={fotoBg4}
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap js-show-on-scroll">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-min rounded-lg"
+            src={fotoBg5}
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap w-1/3 js-show-on-scroll">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-max rounded-lg"
+            src={fotoCewe}
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 js-show-on-scroll">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-max rounded-lg"
+            src={fotoCowo}
+          />
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/3 js-show-on-scroll">
+        <div class="w-full p-1 md:p-2">
+          <img 
+            alt="gallery"
+            class="block object-cover object-center w-full min-h-1/4 max-h-max rounded-lg"
+            src={fotoBg6}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
