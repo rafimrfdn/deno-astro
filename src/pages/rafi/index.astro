@@ -46,10 +46,10 @@ import fotoBgLoveStory from "./img/foto-1.webp";
 import fotoQuotesCowo  from "./img/cowo.webp";
 import fotoQuotesCewe  from "./img/cewe.webp";
 
-import separator1 from "../../static/uploads/separator1.png";
-import separator2 from "../../static/uploads/separator2.png";
-import separator3 from "../../static/uploads/separator3.png";
-import separator4 from "../../static/uploads/separator4.png";
+// import separator1 from "../../static/uploads/separator1.png";
+// import separator2 from "../../static/uploads/separator2.png";
+// import separator3 from "../../static/uploads/separator3.png";
+// import separator4 from "../../static/uploads/separator4.png";
 
 const title = "Fadly & A. Dala";
 const ogWeddingOf = "The Wedding of Fadly & A. Dala";
@@ -93,7 +93,11 @@ const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/
 
   <PlayPauseButton/>
 
-  <PopUp namaCewe={namaCewe} namaCowo={namaCowo} fotoBgPopup={fotoBgPopup}  separator1={separator1} separator2={separator2} separator3={separator3} />
+    <PopUp 
+        namaCewe={namaCewe} 
+        namaCowo={namaCowo} 
+        fotoBgPopup={fotoBgPopup}  
+    />
   <div class="font-sans wrapper">
 
     <WeddingOf
@@ -105,25 +109,13 @@ const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/
       fotoBg3={fotoBg3}
       fotoBg4={fotoBg4}
       fotoBg5={fotoBg5}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
    />
 
         <div class="wrapper__right ">
 <!--      <Countdown
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
         />-->
 
       <MahaSuci fotoBgMahasuci={fotoBgMahasuci}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
         />
     <Cewe
       fotoCewe={fotoCewe}
@@ -132,10 +124,6 @@ const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/
       ceweAdalah={ceweAdalah}
       namaAyahCewe={namaAyahCewe}
       namaIbuCewe={namaIbuCewe}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
       fotoBg3={fotoBg3}
       fotoBg4={fotoBg4}
       fotoBg5={fotoBg5}
@@ -148,10 +136,6 @@ const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/
       cowoAdalah={cowoAdalah}
       namaAyahCowo={namaAyahCowo}
       namaIbuCowo={namaIbuCowo}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
       fotoBg3={fotoBg3}
       fotoBg4={fotoBg4}
       fotoBg5={fotoBg5}
@@ -159,10 +143,6 @@ const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/
     />
     <LoveStory
       fotoBgLoveStory={fotoBgLoveStory}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
     />
         <!--    <Event
       hariAkad={hariAkad}
@@ -176,22 +156,10 @@ const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/
       mapAkad={mapAkad}
       mapResepsi={mapResepsi}
       fotoBgEvent={fotoBgEvent}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
     />
     <Rsvp fotoBgRsvp={fotoBgRsvp}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
         />
     <Ucapan fotoBgUcapan={fotoBgUcapan}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
         />
 
     <Gallery client:load
@@ -206,17 +174,9 @@ const backgroundMusic = "https://hi.punakawandigital.id/wp-content/uploads/2023/
       fotoBg6  = {fotoBg6  }
             
 
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
     />
 
     <End fotoBgEnd={fotoBgEnd} singkatanPasangan={singkatanPasangan}
-      separator1={separator1}
-      separator2={separator2}
-      separator3={separator3}
-      separator4={separator4}
 /> -->
   </div>
   </div>
@@ -457,5 +417,5 @@ imageAnimation {  0% {
 </Layout>
 
 <style lang="scss">
-@import "./style.scss";
+    @import "./style.scss";
 </style>
